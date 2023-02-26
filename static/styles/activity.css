@@ -1,0 +1,222 @@
+.foto-winter,
+.foto-summer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1);
+    justify-content: center;
+    padding-top: 220px;
+    padding-inline: 150px;
+}
+
+.foto-winter img,
+.foto-summer img {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 160px;
+    height: 140px;
+}
+
+.icon-season:hover {
+    animation: fotowinter 2s ease 0s 1 normal forwards;
+}
+
+@keyframes fotowinter {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(-6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(-2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(1.2deg);
+    }
+}
+
+.foto-winter p,
+.foto-summer p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.img-snowflake,
+.img-cafe,
+.img-geolocation,
+.img-pool,
+.img-hotel,
+.img-pavilion,
+.img-company,
+.img-company,
+.img-instructor,
+.img-chair {
+    background-color: rgb(188, 201, 224);
+    border-radius: 30px;
+    padding: 5px;
+    margin-inline: 20px;
+    object-fit: cover;
+}
+
+
+.choose-winter,
+.choose-summer {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 60px;
+}
+
+.row-grid-winter,
+.row-grid-summer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2);
+    padding: 40px;
+    margin-inline: 60px;
+}
+
+.row-grid-winter img,
+.row-grid-summer img {
+    width: 100%;
+    height: 240px;
+}
+
+.row-grid-winter h4,
+.row-grid-summer h4 {
+    text-align: center;
+    font-size: 21px;
+    padding-top: 10px;
+}
+
+.mountain-activity,
+.summer-activity {
+    margin: 40px;
+    text-align: center;
+}
+
+.mountain-activity p,
+.summer-activity p {
+    padding-block: 10px;
+}
+
+.mountain-activity button,
+.summer-activity button {
+    background-color: rgb(83, 133, 226);
+    color: white;
+    font-size: 13px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: rgb(67, 97, 153);
+}
+
+.winter-summer {
+    background-color: rgb(49, 94, 179);
+    color: white;
+    font-size: 18px;
+    padding: 8px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.winter-summer:hover {
+    background-color: rgb(20, 59, 131);
+}
+
+.want-to {
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .text-in-navbar {
+        display: none;
+    }
+
+    .foto-winter,
+    .foto-summer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3);
+        justify-content: center;
+        width: 100%;
+    }
+
+    .icon-season {
+        align-items: center;
+        justify-content: center;
+        padding-block: 10px;
+    }
+
+    .row-grid-winter,
+    .row-grid-summer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3);
+    }
+    
+    .row-grid-winter img,
+    .row-grid-summer img {
+        width: 100%;
+        height: 200px;
+        
+    }
+
+}
+
+@media (max-width: 550px) {
+    .text-in-navbar {
+        display: none;
+    }
+
+    .foto-winter,
+    .foto-summer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6);
+        justify-content: center;
+        width: 100%;
+    }
+
+    .row-grid-winter img,
+    .row-grid-summer img {
+        width: 100%;
+        height: 200px;
+        
+    }
+
+    .icon-season {
+        align-items: center;
+        justify-content: center;
+        padding-block: 10px;
+    }
+
+    .row-grid-winter,
+    .row-grid-summer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6);
+    }
+
+}

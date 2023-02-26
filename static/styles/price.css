@@ -1,0 +1,91 @@
+.for-btn {
+    margin-inline: 70px;
+    margin-left: 200px;
+}
+
+.for-btn a {
+   margin: 15px;
+}
+
+.price-btn {
+    background-color: rgb(83, 133, 226);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 100px;
+  }
+
+  .price-btn:hover {
+    background-color:rgb(67, 97, 153);
+  }
+
+  caption {
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+    margin-block: 30px;
+    margin-bottom: 50px;
+  }
+
+  table {
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 220px;
+    margin-right: 170px;
+    margin-bottom: 90px;
+    }
+
+    th, td:first-child {
+    background: #4d8cc4;
+    color: white;
+    padding: 18px 40px;
+    padding-inline: 30px;
+    }
+
+    th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    }
+
+    td {
+    background: #D8E6F3;
+    }
+
+   
+    th:first-child, td:first-child {
+    text-align: center;
+    }
+
+    .one {
+        padding-inline: 300px;
+    }
+
+    .two {
+        padding-inline: 322px;
+    }
+
+    .text-price-resort {
+        margin-left: 70px;
+    }
+
+    .all-small-text {
+        margin-top: 20px;
+    }
+
+    @media (max-width: 550px) {
+      .for-btn {
+        display: block;
+       }
+  }
+
+  @media (max-width: 1000px) {
+   .for-btn {
+    display: block;
+   }
+  }

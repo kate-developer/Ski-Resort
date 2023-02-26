@@ -1,0 +1,65 @@
+.choose-fun {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 190px;
+}
+
+.fun-activity-ski {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(10);
+    padding: 20px;
+    padding-block: 40px;
+}
+
+.text-ski {
+   margin-top: 20px;
+}
+
+.text-ski h3 {
+    margin-bottom: 20px;
+}
+
+.foto-ski img {
+    width: 100%;
+    display: block;
+    margin-left: 70px;
+    padding-right: 140px;
+}
+
+.ski {
+    font-size: 40px;
+}
+.ski2 {
+    padding-block: 20px;
+}
+
+.btn-ski {
+    background-color:rgb(83, 133, 226);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 40px;
+  }
+
+  .btn-ski:hover {
+    background-color:rgb(67, 97, 153);
+  }
+
+  @media (min-width: 320px) and (max-width: 1200px) {
+    .fun-activity-ski {
+        display: block;
+    }
+    
+    .foto-ski img {
+        width: 100%;
+    } 
+
+    .text-ski {
+        text-align: center;
+    }
+ }

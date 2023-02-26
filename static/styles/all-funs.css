@@ -1,0 +1,174 @@
+.all-text-fun {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 180px;
+    }
+    
+    .all-small-text {
+        margin: 20px;
+        margin-inline: 150px;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.8;
+    }
+
+    .gallary {
+        text-align: center;
+        font-size: 50px;
+        margin: 70px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .grid-ski {
+        justify-content: center;
+       
+    }
+    
+    .grid-ski img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .grid-ski img:hover {
+        animation: myAnim 0.5s linear 0s 1 normal forwards;
+    }
+    
+    @keyframes myAnim {
+        0% {
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            transform: scale(1);
+        }
+    
+        100% {
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            transform: scale(1.1);
+        }
+    }
+    .oblast5 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .oblast6 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    
+    .oblast7 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .oblast8 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .oblast9 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    } 
+
+    .oblast10 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    } 
+
+    .oblast11 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    } 
+
+    .oblast12 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    } 
+
+    .oblast13 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    } 
+
+    .oblast14 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    } 
+
+    .oblast15 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    } 
+    .oblast16 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    } 
+
+    .oblast17 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    } 
+
+    .oblast18 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    } 
+
+    .oblast19 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    } 
+
+    @media (max-width: 550px) {
+        .all-text-fun {
+            font-size: 35px;
+        }
+
+        .all-small-text {
+            text-align: justify;
+            margin-inline: 80px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .all-text-fun {
+            font-size: 35px;
+        }
+
+        .all-small-text {
+            text-align: justify;
+            margin-inline: 80px;
+        } 
+    }

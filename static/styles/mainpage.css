@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section,
+footer {
+  background-color: rgba(221, 219, 219, 0.651)
+}
+
+nav {
+  background-color: rgb(83, 133, 226);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+
+  /* background-color: rgb(78, 129, 55); */
+  /* background-color: rgb(117, 109, 37); */
+
+}
+
+/* убираем отступы и поля, а также list-style для "ul", 
+* и добавляем "position:relative" */
+nav ul {
+  list-style: none;
+  position: relative;
+  line-height: 55px;
+}
+
+/* применяем inline-block позиционирование к элементам навигации */
+nav ul li {
+  display: inline-block;
+  background-color: rgb(83, 133, 226);
+}
+
+/* стилизуем ссылки */
+nav a {
+  display: block;
+  padding: 0 15px;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 55px;
+  text-decoration: none;
+}
+
+/* изменяем цвет фона при наведении курсора */
+nav a:hover {
+  background-color: rgb(67, 97, 153);
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  border-style: solid;
+  border-color: rgb(67, 97, 153);
+  border-width: 1px;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover>ul {
+  display: inherit;
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+  /* min-width: 150px; */
+  /* float:none; */
+  display: list-item;
+  position: relative;
+  z-index: 2;
+}
+
+nav ul ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-style: solid;
+  border-color: rgb(67, 97, 153);
+  border-width: 1px;
+}
+
+nav ul ul ul li {
+  min-width: 270px;
+  float: none;
+  display: list-item;
+  position: relative;
+  z-index: 3;
+}
+
+.text-in-navbar {
+  margin-left: 450px;
+  color: white;
+}
+
+.text-in-navbar a:hover {
+  background-color: rgb(83, 133, 226);
+}
+
+.main-video {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  padding: 50px;
+}
+
+.main-video video {
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-text {
+  z-index: 2;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 110px;
+  color: #2082c7;
+  animation: videotext 5s ease 0s 1 normal forwards;
+}
+
+@keyframes videotext {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.choose-season {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 190px;
+  z-index: 2;
+  position: relative;
+}
+.choose-season br {
+  display: none;
+}
+
+.choose-season-left {
+  text-align: left;
+  margin-left: 60px;
+  font-size: 50px;
+  padding-top: 190px;
+  z-index: 2;
+  position: relative;
+}
+
+.choose-season-left1 {
+  text-align: left;
+  margin-left: 60px;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+
+
+.all-small-text {
+  line-height: 1.8;
+}
+
+
+.row-elements-main {
+  display: grid;
+  grid-template-rows: repeat(4);
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 80px;
+}
+
+.row-elements-main img {
+  width: 100%;
+  height: 500px;
+}
+
+.winter {
+  grid-column: 1/4;
+}
+
+.summer {
+  grid-column: 4/7;
+}
+
+.autumn {
+  grid-column: 7/10;
+}
+
+.spring {
+  grid-column: 10/13;
+}
+
+.winter,
+.summer,
+.autumn,
+.spring {
+  position: relative;
+}
+
+/* Стиль кнопки и поместите его в середине контейнера/изображения */
+.winter .btn-winter,
+.summer .btn-summer,
+.autumn .btn-autumn,
+.spring .btn-spring {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* background-color: rgb(67, 136, 214); */
+  /* background-color: rgb(10, 164, 235); */
+  background-color: rgb(83, 133, 226);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.winter .btn-winter:hover,
+.summer .btn-summer:hover,
+.autumn .btn-autumn:hover,
+.spring .btn-spring:hover {
+  background-color: rgb(67, 97, 153);
+}
+
+.text-winter,
+.text-summer,
+.text-autumn,
+.text-spring {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  top: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-winter p {
+  text-align: center;
+  
+}
+
+/* Текст по центру */
+.gain-center {
+  transition: 1s;
+  /* Время эффекта */
+  text-align: center;
+}
+
+.gain-center:hover {
+  transform: scale(1.2);
+  /* Увеличиваем масштаб */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgb(67, 97, 153);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.text button {
+  /* background-color:rgb(50, 175, 102); */
+  /* background-color:rgb(67, 136, 214); 
+    */
+  background-color: rgb(83, 133, 226);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.text button:hover {
+  background-color: rgb(67, 97, 153);
+}
+
+.foto-footer img {
+  padding-top: 150px;
+  width: 100%;
+}
+
+.white-background {
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+.nav-btn {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+  .nav-btn {
+    display: block;
+    font-size: 2em;
+    padding-inline: 10px;
+    padding-bottom: 4px;
+    margin-right: 12px;
+    border: none;
+    cursor: pointer;
+   background-color: rgb(83, 133, 226);;
+
+  }
+
+  .navig {
+    display: none;
+  }
+
+  .navig ul {
+    width:auto;
+  }
+
+  .drop:hover .navig {
+    display: block;
+    position: absolute;
+  }
+
+  .drop:hover .navig a {
+    font-size: 15px;
+    
+  }
+
+  .navig ul {
+    border-style: none;
+  
+  }
+  .navig ul li {
+    display: block;
+    background-color: rgb(83, 133, 226);
+    cursor: pointer;
+    position: relative;
+    border-style: none;
+  
+  }
+
+  .drop:hover .navig ul ul li {
+    display: inline-block;
+    left: 96%;
+    position: relative;
+    cursor: pointer;
+    bottom: 55px;
+    min-width: none;
+    border-style: none;
+  }
+
+  .drop:hover .navig ul ul li a {
+    width: 129px;
+  }
+
+  .drop:hover .navig ul ul ul li {
+    display: none; 
+  }
+  .row-elements-main {
+    display: block;
+  }
+  .gain-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 386px;
+    /* left: 25px; */
+  }
+
+  .gain-center:hover {
+    transform:none;
+}
+.text-autumn {
+  left: 6px;
+}
+
+.video-text {
+  font-size: 40px;
+}
+.choose-season br {
+  display: initial;
+}
+
+.choose-season {
+  padding-top: 230px;
+  font-size: 35px;
+}
+}

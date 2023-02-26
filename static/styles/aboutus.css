@@ -1,0 +1,63 @@
+.grid-about-us {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-inline: 50px;
+}
+
+.text-info {
+    margin-inline: 50px;
+    padding-block: 20px;
+    line-height: 1.8;
+    text-align: justify;
+
+}
+
+.border-bottom-block-up {
+  width: 17%;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  margin: 30px;
+  margin-left: 65px;
+}
+
+
+
+.border-bottom-block-down {
+  width: 30%;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  margin: 30px;
+  margin-left: 60px;
+}
+
+.block-about-us {
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  margin-block: 30px; 
+}
+
+.info-about-us {
+    margin-inline: 40px;
+    text-align: justify;
+}
+
+.info-about-us h3 {
+font-size: 40px;
+}
+
+  .choose-season-left1 {
+    text-align: left;
+    margin-left: 60px;
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: 320px) and (max-width: 1200px) {
+    .grid-about-us {
+      display: block;
+    }
+  }

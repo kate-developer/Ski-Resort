@@ -1,0 +1,120 @@
+.hotel-rooms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    margin-inline: 40px;
+    margin-top: 40px;
+}
+
+.text-room {
+    margin-inline: 30px;
+    line-height: 1.8;
+}
+
+.text-room p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.rooms-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: justify;
+    padding-inline: 60px;
+    /* margin-inline: 40px; */
+  }
+  
+  .roomstandard {
+  line-height: 1.8;
+}
+
+.roomstandard h2,
+.roomstandard p {
+  margin-bottom: 10px;
+  margin-left: 12px;
+}
+
+.btn-room {
+    background-color: rgb(83, 133, 226);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .btn-room:hover {
+    background-color:rgb(67, 97, 153);
+  }
+
+  * {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container2 {
+  max-width: 1000px;
+  position: relative;
+  width: 550px;
+}
+
+.slideshow-container2 img {
+  height: 350px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  .hotel-rooms {
+    display: block;
+  }
+
+  .hotel-rooms P {
+    text-align: center;
+  }
+
+  .foto-room img {
+    width: 100%;
+  }
+
+  .rooms-list {
+    display: block;
+  }
+
+  .slideshow-container2 {
+    width: 100%;
+  }
+
+}
+
+  
